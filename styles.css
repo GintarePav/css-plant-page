@@ -1,0 +1,444 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", Calibri, sans-serif;
+}
+
+.montserrat {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --main-color: #488072;
+    --accent-color: #d5e0dd;
+    --background-color: #ffffff;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+p, li {
+    font-size: 14px;
+}
+
+.mobile-nav, .mobile-logo-header {
+    display: none;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: var(--background-color);
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--main-color);
+    z-index: 10;
+}
+
+.logo-and-header {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    margin-left: 10px;
+}
+
+.header {
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: 100%;
+}
+
+.navbar-sections {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    scroll-margin-top: 0px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: var(--main-color);
+    padding: 20px;
+    padding-top: 23px;
+    padding-bottom: 21px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 80%;
+}
+
+.navbar-link:visited {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.navbar-link:hover {
+    background-color: var(--accent-color);
+}
+
+.big-screen-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+
+.big-screen-container::before {
+    content: "";
+    background-image: url("https://thesungazette.com/wp-content/uploads/2023/07/succulents_gardening_july_adobe.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.big-screen-container::after {
+    content: "";
+    background-color: var(--background-color);
+    background-image: url("images/thorn-tendril-logo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    height: 60%;
+    width: 70%;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    z-index: -1;
+}
+
+.section-header {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 60px;
+    position: relative;
+}
+
+.underline {
+    height: 20px;
+    width: 50px;
+    position: relative;
+}
+
+.underline::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    width: 90px;;
+    height: 12px;
+    transform: skew(-12deg) translateX(-50%);
+    background: var(--accent-color);
+    z-index: -1;
+}
+
+.plant-image-container{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.plant-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.article-header {
+    text-align: center;
+    font-size: 18px;
+}
+
+.article-sub-header {
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.cactus-section {
+    margin: auto;
+    width: 90%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.cactus-card {
+    width: 560px;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cactus-article {
+    width: 260px;
+    height: max-content;
+    text-align: justify;
+}
+
+.succulent-section {
+    margin: auto;
+    width: 90%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.succulent-card {
+    width: 260px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.succulent-article {
+    width: 100%;
+    height: max-content;
+    text-align: justify;
+}
+
+.care-section {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.care-image-container {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.care-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.care-tips-container {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.care-article {
+    width: 400px;
+    height: max-content;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.care-article > p {
+    margin-bottom: 15px;
+}
+
+.bullet {
+    margin-bottom: 15px;
+}
+
+.bullet::marker {
+    color: var(--main-color);
+}
+
+.care-span {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.footer {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.footer-link:visited {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.copy {
+    font-size: 12px;
+}
+
+@media (max-width: 560px) {
+    .navbar {
+        display: none;
+    }
+
+    .mobile-nav {
+        width: 100%;
+        height: 60px;
+        background-color: var(--background-color);
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 2px solid var(--main-color);
+        z-index: 10;
+    }
+
+    .mobile-logo-header {
+        width: 90%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .mobile-heading {
+        display: inline;
+        color: var(--main-color);
+        text-transform: uppercase;
+        font-size: 100%;
+    }
+
+    .mobile-logo {
+        display: inline;
+        width: 55px;
+        height: 55px;
+        margin: 10px;
+    }
+
+
+    .collapsible-mobile-button {
+        width: 10%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .arrow {
+        border: solid var(--main-color);
+        border-width: 0 3px 3px 0;
+        display: inline;
+        padding: 3px;
+        transform: rotate(45deg);
+        cursor: pointer;
+    }
+
+    .collapse-mobile-nav {
+        display: none;
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        height: 80px;
+        background-color: var(--background-color);
+        border-bottom: 2px solid var(--main-color);
+    }
+
+    .mobile-nav-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-navbar-link {
+        display: block;
+        text-decoration: none;
+        color: var(--main-color);
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 80%;
+        margin: 5px;
+        margin-left: 10px;
+        position: relative;
+    }
+    
+    .mobile-navbar-link:hover::before {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: 0px;
+        width: 160px;
+        height: 8px;
+        transform: skew(-12deg) translateX(-50%);
+        background: var(--accent-color);
+        z-index: -1;
+    }
+
+    .mobile-nav:hover {
+        height: 140px;
+    }
+
+    .mobile-nav:hover > .collapse-mobile-nav {
+        display: block;
+    }
+
+    .care-article {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
