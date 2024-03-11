@@ -406,7 +406,7 @@ p, li {
     }
 
     .mobile-navbar-link {
-        display: inline-block;
+        display: block;
         text-decoration: none;
         color: var(--main-color);
         text-transform: uppercase;
