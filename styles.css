@@ -196,10 +196,13 @@ p, li {
     font-size: 16px;
 }
 
+/* Nuo čia daugeliui konteineriu buvau priskyrusi "height: max-content" aukštį, nes nereikia skaičiuoti pikselių, bet kadangi nesimokėme tokio, užkomentavau ir naudojau "max-height" */
+
 .cactus-section {
     margin: auto;
     width: 90%;
-    height: max-content;
+    /* height: max-content; */
+    max-height: 5716px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -209,7 +212,8 @@ p, li {
 
 .cactus-card {
     width: 560px;
-    height: max-content;
+    /* height: max-content; */
+    max-height: 525px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -219,14 +223,16 @@ p, li {
 
 .cactus-article {
     width: 260px;
-    height: max-content;
+    /* height: max-content; */
+    max-height: 295px;
     text-align: justify;
 }
 
 .succulent-section {
     margin: auto;
     width: 90%;
-    height: max-content;
+    /* height: max-content; */
+    max-height: 5899px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -236,7 +242,8 @@ p, li {
 
 .succulent-card {
     width: 260px;
-    height: max-content;
+    /* height: max-content; */
+    max-height: 556px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -247,13 +254,15 @@ p, li {
 
 .succulent-article {
     width: 100%;
-    height: max-content;
+    /* height: max-content; */
+    max-height: 326px;
     text-align: justify;
 }
 
 .care-section {
     width: 100%;
-    height: max-content;
+    /* height: max-content; */
+    max-height: 4740px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -274,7 +283,8 @@ p, li {
 
 .care-tips-container {
     width: 100%;
-    height: max-content;
+    /* height: max-content; */
+    max-height: 4190px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -283,7 +293,8 @@ p, li {
 
 .care-article {
     width: 400px;
-    height: max-content;
+    /* height: max-content; */
+    max-height: 1488px;
     text-align: justify;
     margin-left: 30px;
     margin-right: 30px;
