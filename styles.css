@@ -202,7 +202,7 @@ p, li {
     margin: auto;
     width: 90%;
     /* height: max-content; */
-    max-height: 5716px;
+    max-height: 5800px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -213,7 +213,7 @@ p, li {
 .cactus-card {
     width: 560px;
     /* height: max-content; */
-    max-height: 525px;
+    max-height: 535px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -224,7 +224,7 @@ p, li {
 .cactus-article {
     width: 260px;
     /* height: max-content; */
-    max-height: 295px;
+    max-height: 305px;
     text-align: justify;
 }
 
@@ -232,7 +232,7 @@ p, li {
     margin: auto;
     width: 90%;
     /* height: max-content; */
-    max-height: 5899px;
+    max-height: 6000px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -243,7 +243,7 @@ p, li {
 .succulent-card {
     width: 260px;
     /* height: max-content; */
-    max-height: 556px;
+    max-height: 570px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -255,7 +255,7 @@ p, li {
 .succulent-article {
     width: 100%;
     /* height: max-content; */
-    max-height: 326px;
+    max-height: 336px;
     text-align: justify;
 }
 
