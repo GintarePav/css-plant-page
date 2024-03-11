@@ -436,4 +436,12 @@ p, li {
     .mobile-nav:hover > .collapse-mobile-nav {
         display: block;
     }
+
+    .mobile-nav:active {
+        height: 60px;
+    }
+
+    .mobile.nav:active > .collapse-mobile-nav {
+        display: none;
+    }
 }
