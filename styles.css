@@ -437,11 +437,7 @@ p, li {
         display: block;
     }
 
-    .mobile-nav:active {
-        height: 60px;
-    }
-
-    .mobile.nav:active > .collapse-mobile-nav {
+    .mobile-nav:active > .collapse-mobile-nav {
         display: none;
     }
 }
