@@ -403,17 +403,18 @@ p, li {
         list-style: none;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .mobile-navbar-link {
-        display: block;
+        display: inline-block;
         text-decoration: none;
         color: var(--main-color);
         text-transform: uppercase;
         font-weight: bold;
         font-size: 80%;
         margin: 5px;
-        margin-left: 10px;
         position: relative;
     }
     
@@ -421,19 +422,19 @@ p, li {
         content: "";
         position: absolute;
         top: 7px;
-        left: 0px;
-        width: 160px;
+        left: 20px;
+        width: 50px;
         height: 8px;
         transform: skew(-12deg) translateX(-50%);
         background: var(--accent-color);
         z-index: -1;
     }
 
-    .mobile-nav:hover {
+    .mobile-nav:focus-within {
         height: 140px;
     }
 
-    .mobile-nav:hover > .collapse-mobile-nav {
-        display: block;
+    .mobile-nav:focus-within > .collapse-mobile-nav {
+        display: block; 
     }
 }
