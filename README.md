@@ -4,3 +4,6 @@ This repository contains the first significant homework project I completed duri
 ## The Task
 The task strictly required the use of HTML and CSS only to recreate the design of the instructor's website. It was also not possible to use any features we hadn't yet learned like transitions, animations or grid.
 Due to the nature of the assignment, which involved the instructor's personal work, I am unable to provide links or screenshots of the original page. However, for reference, I have included wireframes of the layout in the "task-layout-wireframes" folder within this repository.
+
+#### Disclaimer
+I used ChatGPT to generate the content such as titles, descriptions, color combinations, etc.
